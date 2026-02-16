@@ -1,0 +1,13 @@
+# Ignorar diretórios
+.git
+.vscode
+.idea
+cache
+
+# Ignorar arquivos do SO
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos específicos
+secrets.env
+debug.log
