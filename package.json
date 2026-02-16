@@ -4,7 +4,7 @@
   "type": "module",
   "main": "index.js",
   "dependencies": {
-    "@whiskeysockets/baileys": "6.7.17",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "express": "5.2.1",
     "link-preview-js": "3.2.0",
     "pino": "8.16.0",
