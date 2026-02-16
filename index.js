@@ -1,5 +1,4 @@
 import fs from "fs";
-import dotenv from 'dotenv';
 import express from "express";
 import makeWASocket, {
   useMultiFileAuthState,
@@ -7,11 +6,11 @@ import makeWASocket, {
   DisconnectReason,
   downloadContentFromMessage
 } from "@whiskeysockets/baileys";
-// Carrega discloud.config
-dotenv.config({ path: './discloud.config' });
-// Agora você consegue acessar as variáveis
-console.log(process.env.NAME);    // RD21
-console.log(process.env.AVATAR);  // URL do avatar
+
+// Configuração do servidor Express (opcional, para manter ativo)
+const app = express();
+app.get("/", (req, res) => res.send("Bot RD21 rodando!"));
+app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
 
 const prefix = "!";
 const DB_FILE = "./database.json";
